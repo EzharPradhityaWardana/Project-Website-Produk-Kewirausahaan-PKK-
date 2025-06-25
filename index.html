@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROBAK</title>
+    <link rel="stylesheet" href="indexx.css" />
+  </head>
+  
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="indexx.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload banner
+  -->
+  <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="robak.png" width="130" height="120" alt="roti">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="190" height="50" alt="Footcap logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about us.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#products" class="navbar-link">Products</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link">Contact
+
+          </a>
+          <li class="navbar-item">
+            <a href="data sales.html" class="navbar-link">Data sales</a>
+          </li>
+
+        </ul>
+
+      
+            
+
+           
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: url('./assets/images/hero-banner.png')">
+        <div class="container">
+
+          <h2 class="h1 hero-title">
+            ROBAK <strong>ROTI BAKAR</strong>
+          </h2>
+
+          <p class="hero-text">
+            Selamat Datang di ROBAK – Surga Roti Bakar yang Menggugah Selera!
+
+Di ROBAK , kami percaya bahwa kebahagiaan bisa dimulai dari sepotong roti bakar yang sederhana namun penuh rasa. Kami hadir untuk menghadirkan pengalaman kuliner yang berbeda, dengan sajian roti bakar yang dibuat dari bahan-bahan pilihan, tekstur yang renyah di luar namun lembut di dalam, serta isian yang melimpah dan memanjakan lidah.
+
+
+          </p>
+
+
+
+        </div>
+      </section>
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section id="products" class="section product">
+
+        <div class="container">
+
+          <h2 class="h2 section-title">PRODUCTS</h2>
+
+          <ul class="filter-list">
+
+           <div id="cart" class="cart-container">
+  <h2>🛒 Keranjang Belanja</h2>
+  <ul id="cart-items" class="cart-items"></ul>
+  <p class="cart-total"><strong>Total: Rp <span id="cart-total">0</span></strong></p>
+  
+<a href="pembayaran.html" class="btn-pay" onclick="saveCartTotal()">💳 BAYAR SEKARANG</a>
+
+
+</div>
+
+
+          <ul class="product-list">
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="1.jpg" width="312" height="350" loading="lazy"
+                    alt="roti" class="image-contain">
+
+                  <div class="card-badge">Bestsallers</div>
+
+                  <ul class="card-action-list">
+
+                   
+
+                     
+                    </li>
+
+
+                  
+                    </li>
+
+                    
+                 
+                    </li>
+
+
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                  
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Roti Isi Coklat Blueberry Keju</a>
+                  </h3>
+
+                  <data class="card-price" value="5000">Rp.5000</data>
+<button class="add-to-cart-btn" data-name="Roti Isi Coklat Blueberry Keju" data-price="5000">
+  Tambah ke Keranjang
+</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="2.jpg" width="312" height="350" loading="lazy"
+                    alt="Leather Mens Slipper" class="image-contain">
+                    <div class="card-badge">Bestsallers</div>
+
+                  <ul class="card-action-list">
+
+                  
+                    </li>
+
+                    </li>
+
+                   
+                    </li>
+
+                  
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                   
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Roti Isi Coklat Keju</a>
+                  </h3>
+
+                  <data class="card-price" value="4000">Rp.4000</data>
+<button class="add-to-cart-btn" data-name="Roti Isi Coklat Keju" data-price="4000">
+  Tambah ke Keranjang
+</button>
+
+                </div
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="3.jpg" width="312" height="350" loading="lazy"
+                    alt="Simple Fabric Shoe" class="image-contain">
+
+
+                  <ul class="card-action-list">
+
+                  
+                    </li>
+
+                   
+                    </li>
+
+                    
+                    </li>
+
+                    
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                 
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Roti Isi Blueberry Keju</a>
+                  </h3>
+
+                  <data class="card-price" value="4000">Rp.4000</data>
+<button class="add-to-cart-btn" data-name="Roti Isi Blueberry Keju" data-price="4000">
+  Tambah ke Keranjang
+</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="4.jpg" width="312" height="350" loading="lazy"
+                    alt="Air Jordan 7 Retro " class="image-contain">
+
+                  <div class="card-badge"> New</div>
+
+                  <ul class="card-action-list">
+
+                    </li>
+
+                   
+                    </li>
+
+                  
+                    </li>
+
+                    
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+               
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Roti Isi Coklat Blueberry</a>
+                  </h3>
+
+                  <data class="card-price" value="4000">Rp.4000
+<button class="add-to-cart-btn" data-name="Roti Isi Coklat Blueberry" data-price="4000">
+  Tambah ke Keranjang
+</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="5.jpg" width="312" height="350" loading="lazy"
+                    alt="Nike Air Max 270 SE" class="image-contain">
+
+                 
+                  <ul class="card-action-list">
+
+                  
+                    </li>
+
+                   
+                    </li>
+
+                    </li>
+
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                  
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Roti Isi Keju</a>
+                  </h3>
+
+                  <data class="card-price" value="3000">Rp.3000</data>
+<button class="add-to-cart-btn" data-name="Roti Isi Keju" data-price="3000">
+  Tambah ke Keranjang
+</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="6.jpg" width="312" height="350" loading="lazy"
+                    alt="Adidas Sneakers Shoes" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                  
+                    </li>
+
+                  </li>
+
+                   
+                    </li>
+
+                   
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Roti Isi Coklat </a>
+                  </h3>
+
+                  <data class="card-price" value="3000">Rp.3000</data>
+<button class="add-to-cart-btn" data-name="Roti Isi Coklat" data-price="3000">
+  Tambah ke Keranjang
+</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="7.jpg" width="312" height="350" loading="lazy"
+                    alt="Nike Basketball shoes" class="image-contain">
+                    <div class="card-badge">New</div>
+
+                  <ul class="card-action-list">
+
+                    </li>
+
+                    </li>
+
+                   
+                    </li>
+
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                  
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Roti Isi Blueberry</a>
+                  </h3>
+
+                  <data class="card-price" value="3000">Rp.3000</data>
+<button class="add-to-cart-btn" data-name="Roti Isi Blueberry" data-price="3000">
+  Tambah ke Keranjang
+</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="8.jpg" width="312" height="350" loading="lazy"
+                    alt="Simple Fabric Shoe" class="image-contain">
+                   
+
+                  <ul class="card-action-list">
+
+                   
+                    </li>
+
+                    </li>
+
+                   
+                    </li>
+
+                   
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Roti Original</a>
+                  </h3>
+
+                  <data class="card-price" value="2000">Rp.2000</data>
+<button class="add-to-cart-btn" data-name="Roti Original" data-price="2000">
+  Tambah ke Keranjang
+</button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+         
+            </li>
+
+          </ul>
+
+        </div>
+        <section id="contact" class="section contact">
+
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                 Class XI RPL 1
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:0895-3670-75210" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+                <span class="footer-link-text">0895-3670-75210</span>
+              </a>
+              <a href="tel:0822-5727-9366" class="footer-link" style="padding-left: 30px;">
+                <span class="footer-link-text">0822-5727-9366</span>
+              </a>
+            </li>
+            
+
+            <li>
+              <a href="zharprdhtyaa@gmail.com" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">zharprdhtyaa@gmail.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Opening Time</p>
+
+            <table class="footer-table">
+              <tbody>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Senin-Rabu</th>
+
+                  <td class="table-data">9AM - 12PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Kamis</th>
+
+                  <td class="table-data">9AM - 12PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Jumat</th>
+
+                  <td class="table-data">9AM - 12PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sabtu</th>
+
+                  <td class="table-data">Closed</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Minggu</th>
+
+                  <td class="table-data">Closed</td>
+                </tr>
+
+              
+              </tbody>
+
+            </table>
+           
+
+          </div>
+  <h1>LOCATION :</h1>
+  
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4135.685355484069!2d112.73339494494802!3d-7.305457218211487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb9ef4d7d9ed%3A0x5959ad479fd46d02!2sSMK%20Negeri%201%20Surabaya!5e0!3m2!1sen!2sid!4v1746423301742!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+        
+
+        </div>
+
+      </div>
+     
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 <a href="#" class="copyright-link">ROBAK</a>. XI RPL 1
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+  
+  function saveCartTotal() {
+    const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+    localStorage.setItem('totalPembayaran', total);
+  }
+
+
+  const cartItems = [];
+  const cartList = document.getElementById('cart-items');
+  const cartTotal = document.getElementById('cart-total');
+
+  function updateCart() {
+    cartList.innerHTML = '';
+    let total = 0;
+
+    cartItems.forEach((item, index) => {
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <span>${item.name} - Rp${item.price}</span>
+        <button onclick="removeItem(${index})">Hapus</button>
+      `;
+      cartList.appendChild(li);
+      total += item.price;
+    });
+
+    cartTotal.textContent = total;
+  }
+
+  function removeItem(index) {
+    cartItems.splice(index, 1);
+    updateCart();
+  }
+
+  document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const name = button.getAttribute('data-name');
+      const price = parseInt(button.getAttribute('data-price'));
+      cartItems.push({ name, price });
+      updateCart();
+    });
+  });
+</script>
+
+
+
+</body>
+
+</html>

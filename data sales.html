@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diagram Garis Penjualan</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-image: url('fnc.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+    }
+     /* Navbar Styles */
+     body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #f8f8f8;
+    background-color: #f9f9f9;
+    padding-top: 70px; /* tambahkan padding sesuai tinggi navbar */
+}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+        nav.navbar {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    position: fixed; /* ubah dari sticky ke fixed */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+        .navbar .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-list {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .navbar-item a {
+            color: #ecf0f1;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .navbar-item a:hover {
+            color: #3498db;
+        }
+      /* Header Styles */
+      header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            animation: fadeInDown 1s ease;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+    .chart-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="index.html">Home</a></li>
+            <li class="navbar-item"><a href="about us.html">About Us</a></li>
+            <li class="navbar-item"><a href="data sales.html">Data Sales</a></li>
+        </ul>
+    </div>
+</nav>
+
+ 
+  <div class="chart-container">
+    <canvas id="lineChart" width="900" height="600"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('lineChart').getContext('2d');
+
+    const data = {
+      labels: ['Penjualan Pertama', 'Penjualan Kedua'],
+      datasets: [{
+        label: 'Hasil Penjualan',
+        data: [200, 630],
+        fill: true,
+        backgroundColor: 'rgba(0, 123, 255, 0.2)',
+        borderColor: 'rgba(0, 123, 255, 1)',
+        tension: 0.3,
+        pointBackgroundColor: 'blue'
+      }]
+    };
+
+    const config = {
+  type: 'line',
+  data: data,
+  options: {
+    responsive: true,
+    plugins: {
+      title: {
+        display: true,
+        text: 'Diagram Perkembangan Penjualan',
+        font: { size: 36 }
+      }
+    },
+    scales: {
+      x: {
+        ticks: {
+          font: {
+            size: 28
+          }
+        }
+      },
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+};
+
+          
+
+    new Chart(ctx, config);
+  </script>
+</body>
+</html>
